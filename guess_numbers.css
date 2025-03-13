@@ -43,7 +43,6 @@ p {
     width:100px;
     text-align: center;
 }
-.versuche {
-    margin-top: 50px;
-    text-align:center;
+#versuche {
+    margin: 50px auto;
 }
