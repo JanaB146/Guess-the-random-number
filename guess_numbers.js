@@ -18,16 +18,21 @@ function checkInput() {
     while (gameOn && tries >= 0) {
         guessedNumber = document.getElementById("input").value;
         document.getElementById("ueberschrift").innerText = guessedNumber;
-        if (guessedNumber < randomNumber) {
-            document.getElementById("game-text").innerHTML = "Die Nummer war zu klein, versuch es noch einmal.";
-            tries = tries - 1;
-        } else if (guessedNumber > randomNumber) {
-            document.getElementById("game-text").innerHTML = "Die Nummer war zu hoch, versuch es noch einmal.";
-            tries = tries - 1;
+        if (guessedNumber >= 0 && guessedNumber <= 100) {
+            if (guessedNumber < randomNumber) {
+                document.getElementById("game-text").innerHTML = "Die Nummer war zu klein, versuch es noch einmal.";
+                tries = tries - 1;
+            } else if (guessedNumber > randomNumber) {
+                document.getElementById("game-text").innerHTML = "Die Nummer war zu hoch, versuch es noch einmal.";
+                tries = tries - 1;
+            } else {
+                document.getElementById("game-text").innerHTML = "Du hast es geschafft, mega!";
+                gameOn = false;
+            }   
         } else {
-            document.getElementById("game-text").innerHTML = "Du hast es geschafft, mega!";
-            gameOn = false;
-        }   
+            document.getElementById("game-text").innerText = "Bitte bleib zwischen 0 und 100.";
+        }
+        
     return false;
 }
     if (guessedNumber != randomNumber) {
