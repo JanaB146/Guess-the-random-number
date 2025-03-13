@@ -38,3 +38,12 @@ p {
     border:solid 2px;
     border-radius: 7px;
 }
+.input-window {
+    height: 50px;
+    width:100px;
+    text-align: center;
+}
+.versuche {
+    margin-top: 50px;
+    text-align:center;
+}
