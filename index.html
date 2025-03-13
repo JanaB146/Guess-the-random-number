@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Numbers</title>
+    <link rel="stylesheet" href="./guess_numbers.css">
+    <script src="./guess_numbers.js"></script>
+</head>
+<body>
+    <div class="game-window" onclick="startGuessNumbers();">
+        <h1 id="ueberschrift">Zahlen raten</h1>
+        <p id="game-text">Press Start</p>
+    </div>
+    <div class="input-container">
+        <form onsubmit="return checkInput();">
+            <!--Eingabefeld-->
+            <input id="input" class="input-window" type="text">
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    display:flex;
+    flex-direction:column;
+    background: #c7c7c7;
+}
+.game-window {
+    border: solid rgb(66, 66, 66) 10px;
+    border-radius: 7px;
+    border-style: outset;
+    background-color: aliceblue;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+.game-window:hover {
+    cursor: pointer;
+    border:solid 10px;
+    background-color: rgb(214, 222, 229);
+}
+#game-text {
+    border:solid rgb(45, 30, 59) 2px;
+    border-radius: 6px;
+    background: rgb(116, 149, 182);
+    padding:5px;
+    margin:0px 30px 30px 30px;
+    width:250px;
+    align-self: center;
+}
+.input-container {
+    align-self: center;
+    margin-top:30px;
+    border:solid 2px;
+    border-radius: 7px;
+}
