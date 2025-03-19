@@ -38,7 +38,7 @@ function checkInput() {
 }
     if (guessedNumber != randomNumber) {
         document.getElementById("game-text").innerHTML = `Du hast alle Versuche verbraucht und dennoch verloren. Die Zufallsnummer war ${randomNumber}.`;
-        document.getElementById("versuche").innerText=`Du hast noch 0 Versuche.`;
+        document.getElementById("versuche").innerText= "Du hast noch 0 Versuche.";
         return false;
     }
     return false;
